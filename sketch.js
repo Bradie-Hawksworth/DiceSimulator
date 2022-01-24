@@ -16,52 +16,52 @@ function diceValueOne(size, xPoint, yPoint){
   point((size/2) + xPoint,(size/2) + yPoint);
 }
 
-function diceValueTwo(size){
+function diceValueTwo(size, xPoint, yPoint){
   strokeWeight(size * 0.01);
-  square(70, 20, size);
+  square(xPoint, yPoint, size);
   strokeWeight(size * 0.15);
-  point((size * 0.25) + 70,(size * 0.25) + 20);
-  point((size * 0.75) + 70,(size * 0.75) + 20);
+  point((size * 0.25) + xPoint,(size * 0.25) + yPoint);
+  point((size * 0.75) + xPoint,(size * 0.75) + yPoint);
 }
 
-function diceValueThree(size){
+function diceValueThree(size, xPoint, yPoint){
   strokeWeight(size * 0.01);
-  square(120, 20, size);
+  square(xPoint, yPoint, size);
   strokeWeight(size * 0.15);
-  point((size * 0.25) + 120,(size * 0.25) + 20);
-  point((size/2) + 120,(size/2) + 20);
-  point((size * 0.75) + 120,(size * 0.75) + 20);
+  point((size * 0.25) + xPoint,(size * 0.25) + yPoint);
+  point((size/2) + xPoint,(size/2) + yPoint);
+  point((size * 0.75) + xPoint,(size * 0.75) + yPoint);
 }
 
-function diceValueFour(size){
+function diceValueFour(size, xPoint, yPoint){
   strokeWeight(size * 0.01);
-  square(20, 70, size);
+  square(xPoint, yPoint, size);
   strokeWeight(size * 0.15);
-  point((size * 0.25) + 20,(size * 0.25) + 70);
-  point((size * 0.25) + 20,(size * 0.75) + 70);
-  point((size * 0.75) + 20,(size * 0.25) + 70);
-  point((size * 0.75) + 20,(size * 0.75) + 70);
+  point((size * 0.25) + xPoint,(size * 0.25) + yPoint);
+  point((size * 0.25) + xPoint,(size * 0.75) + yPoint);
+  point((size * 0.75) + xPoint,(size * 0.25) + yPoint);
+  point((size * 0.75) + xPoint,(size * 0.75) + yPoint);
 }
 
-function diceValueFive(size){
+function diceValueFive(size, xPoint, yPoint){
   strokeWeight(size * 0.01);
-  square(70, 70, size);
+  square(xPoint, yPoint, size);
   strokeWeight(size * 0.15);
-  point((size * 0.25) + 70,(size * 0.25) + 70);
-  point((size * 0.25) + 70,(size * 0.75) + 70);
-  point((size * 0.75) + 70,(size * 0.25) + 70);
-  point((size * 0.75) + 70,(size * 0.75) + 70);
-  point((size/2) + 70,(size/2) + 70);
+  point((size * 0.25) + xPoint,(size * 0.25) + yPoint);
+  point((size * 0.25) + xPoint,(size * 0.75) + yPoint);
+  point((size * 0.75) + xPoint,(size * 0.25) + yPoint);
+  point((size * 0.75) + xPoint,(size * 0.75) + yPoint);
+  point((size/2) + xPoint,(size/2) + yPoint);
 }
 
-function diceValueSix(size){
+function diceValueSix(size, xPoint, yPoint){
   strokeWeight(size * 0.01);
-  square(120, 70, size);
+  square(xPoint, yPoint, size);
   strokeWeight(size * 0.15);
-  point((size * 0.25) + 120,(size * 0.25) + 70);
-  point((size * 0.25) + 120,(size * 0.5) + 70);
-  point((size * 0.25) + 120,(size * 0.75) + 70);
-  point((size * 0.75) + 120,(size * 0.25) + 70);
-  point((size * 0.75) + 120,(size * 0.75) + 70);
-  point((size * 0.75) + 120,(size * 0.5) + 70);
+  point((size * 0.25) + xPoint,(size * 0.25) + yPoint);
+  point((size * 0.25) + xPoint,(size * 0.5) + yPoint);
+  point((size * 0.25) + xPoint,(size * 0.75) + yPoint);
+  point((size * 0.75) + xPoint,(size * 0.25) + yPoint);
+  point((size * 0.75) + xPoint,(size * 0.75) + yPoint);
+  point((size * 0.75) + xPoint,(size * 0.5) + yPoint);
 }
