@@ -4,68 +4,64 @@ function setup() {
 
 function draw() {
   background(220);
-  diceValueOne();
-  diceValueTwo();
-  diceValueThree();
-  diceValueFour();
-  diceValueFive();
-  diceValueSix();
+  diceValueOne(180, 310, 180);
+
 }
 
 //This is a user defined function for drawing a dice with the value one.
-function diceValueOne(){
-  strokeWeight(1);
-  square(20, 20, 40);
-  strokeWeight(5);
-  point(40,40);
+function diceValueOne(size, xPoint, yPoint){
+  strokeWeight(size * 0.01);
+  square(xPoint, yPoint, size);
+  strokeWeight(size * 0.15);
+  point((size/2) + xPoint,(size/2) + yPoint);
 }
 
-function diceValueTwo(){
-  strokeWeight(1);
-  square(70, 20, 40);
-  strokeWeight(5);
-  point(80,30);
-  point(100,50);
+function diceValueTwo(size){
+  strokeWeight(size * 0.01);
+  square(70, 20, size);
+  strokeWeight(size * 0.15);
+  point((size * 0.25) + 70,(size * 0.25) + 20);
+  point((size * 0.75) + 70,(size * 0.75) + 20);
 }
 
-function diceValueThree(){
-  strokeWeight(1);
-  square(120, 20, 40);
-  strokeWeight(5);
-  point(130,30);
-  point(140,40);
-  point(150,50);
+function diceValueThree(size){
+  strokeWeight(size * 0.01);
+  square(120, 20, size);
+  strokeWeight(size * 0.15);
+  point((size * 0.25) + 120,(size * 0.25) + 20);
+  point((size/2) + 120,(size/2) + 20);
+  point((size * 0.75) + 120,(size * 0.75) + 20);
 }
 
-function diceValueFour(){
-  strokeWeight(1);
-  square(20, 70, 40);
-  strokeWeight(5);
-  point(30,80);
-  point(50,80);
-  point(30,100);
-  point(50,100);
+function diceValueFour(size){
+  strokeWeight(size * 0.01);
+  square(20, 70, size);
+  strokeWeight(size * 0.15);
+  point((size * 0.25) + 20,(size * 0.25) + 70);
+  point((size * 0.25) + 20,(size * 0.75) + 70);
+  point((size * 0.75) + 20,(size * 0.25) + 70);
+  point((size * 0.75) + 20,(size * 0.75) + 70);
 }
 
-function diceValueFive(){
-  strokeWeight(1);
-  square(70, 70, 40);
-  strokeWeight(5);
-  point(80,80);
-  point(100,80);
-  point(90,90);
-  point(80,100);
-  point(100,100);
+function diceValueFive(size){
+  strokeWeight(size * 0.01);
+  square(70, 70, size);
+  strokeWeight(size * 0.15);
+  point((size * 0.25) + 70,(size * 0.25) + 70);
+  point((size * 0.25) + 70,(size * 0.75) + 70);
+  point((size * 0.75) + 70,(size * 0.25) + 70);
+  point((size * 0.75) + 70,(size * 0.75) + 70);
+  point((size/2) + 70,(size/2) + 70);
 }
 
-function diceValueSix(){
-  strokeWeight(1);
-  square(120, 70, 40);
-  strokeWeight(5);
-  point(130,80);
-  point(150,80);
-  point(130,90);
-  point(150,90);
-  point(150,100);
-  point(130,100);
+function diceValueSix(size){
+  strokeWeight(size * 0.01);
+  square(120, 70, size);
+  strokeWeight(size * 0.15);
+  point((size * 0.25) + 120,(size * 0.25) + 70);
+  point((size * 0.25) + 120,(size * 0.5) + 70);
+  point((size * 0.25) + 120,(size * 0.75) + 70);
+  point((size * 0.75) + 120,(size * 0.25) + 70);
+  point((size * 0.75) + 120,(size * 0.75) + 70);
+  point((size * 0.75) + 120,(size * 0.5) + 70);
 }
