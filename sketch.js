@@ -4,7 +4,7 @@ function setup() {
 
 function draw() {
   background(220);
-  diceValueOne(180, 310, 180);
+  diceValueOne(40, 20, 20);
 
 }
 
